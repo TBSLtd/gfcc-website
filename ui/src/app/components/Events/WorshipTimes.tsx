@@ -1,0 +1,75 @@
+'use client';
+
+import { FaClock, FaChurch } from 'react-icons/fa';
+import Image from "next/image";
+import lift from "@/assets/lifthand.jpg"
+
+const WorshipTimes = () => {
+    const worshipSchedule = [
+        {
+            name: 'Morning Worship',
+            time: '5:30 AM - 6:00 AM',
+            icon: <FaClock className="text-[#033097]" />
+        },
+        {
+            name: 'Afternoon Worship',
+            time: '1:30 PM - 2:00 PM',
+            icon: <FaClock className="text-[#033097]" />
+        },
+        {
+            name: 'Evening Worship',
+            time: '7:30 PM - 8:00 PM',
+            icon: <FaClock className="text-[#033097]" />
+        }
+    ];
+
+    return (
+        <div className="w-full mx-auto bg-white shadow-md overflow-hidden">
+            {/* Header */}
+            <div className="flex">
+                <div className="w-1/2 mx-10">
+                    <div className=" px-6 pt-6 flex items-center">
+                        <FaChurch className="text-[#033097] text-2xl mr-3" />
+                        <h2 className="text-xl font-bold text-[#033097]">Worship Times</h2>
+                    </div>
+
+                    {/* Schedule */}
+                    <div className="p-6">
+                        <ul className="divide-y divide-gray-200">
+                            {worshipSchedule.map((service, index) => (
+                                <li key={index} className="py-3">
+                                    <div className="flex items-center justify-between">
+                                        <div className="flex items-center">
+                                            {service.icon}
+                                            <span className="ml-3 font-medium text-gray-900">{service.name}</span>
+                                        </div>
+                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                            {service.time}
+                                        </span>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* Additional Info */}
+                        <div className="mt-20 text-sm text-gray-600 italic">
+                            <p>All services held at our main sanctuary</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative w-1/2 h-96">
+                    <Image
+                        src={lift}
+                        alt="lifted"
+                        fill
+                        className="object-cover"
+                        quality={80}
+                        priority={false}
+                    />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default WorshipTimes;
