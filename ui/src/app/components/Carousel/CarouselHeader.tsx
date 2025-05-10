@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Image from 'next/image';
 import churchLogo from "../../../assets/GFCC LOGO BLUE.png";
-import lift from "@/assets/lifthand.jpg"
+import lift from "@/assets/lifthand.jpg";
+import MoG from "@/assets/MOG.jpg"
+import choir from "@/assets/choir.jpg"
 
 const CarouselHeader = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,8 +16,8 @@ const CarouselHeader = () => {
   // Sample carousel images (replace with your church images)
   const slides = [
     { id: 1, image: lift , alt: 'Church building' },
-    { id: 2, image: lift , alt: 'Worship service' },
-    { id: 3, image: lift , alt: 'Community event' },
+    { id: 2, image: MoG , alt: 'Worship service' },
+    { id: 3, image: choir , alt: 'Community event' },
   ];
 
   // Auto-rotate slides

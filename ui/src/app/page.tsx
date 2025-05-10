@@ -1,4 +1,5 @@
 import CarouselHeader from "./components/Carousel/CarouselHeader";
+import RecentSermons from "./components/Events/RecentSermons";
 import UpcomingEvents from "./components/Events/UpcoomingEvent";
 import WorshipTimes from "./components/Events/WorshipTimes";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <CarouselHeader />
         <UpcomingEvents />
         <WorshipTimes />
+        <RecentSermons />
       {/* </main> */}
     </div>
   );
