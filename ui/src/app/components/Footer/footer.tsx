@@ -11,7 +11,6 @@ import {
   import Link from 'next/link';
   
   const Footer = () => {
-    // Social media links (replace with your actual links)
     const socialLinks = [
       {
         name: 'Facebook',
