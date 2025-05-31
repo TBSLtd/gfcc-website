@@ -75,25 +75,25 @@ import {
                 <li>
                   <Link href="/sermons" className="hover:text-white flex items-center transition-colors">
                     <FaArrowRight className="mr-2 text-blue-400 text-xs" />
-                    Sermons
+                    <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'> Sermons</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/ministries" className="hover:text-white flex items-center transition-colors">
                     <FaArrowRight className="mr-2 text-blue-400 text-xs" />
-                    Ministries
+                    <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'> Ministries</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/events" className="hover:text-white flex items-center transition-colors">
                     <FaArrowRight className="mr-2 text-blue-400 text-xs" />
-                    Events
+                    <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'> Events</span>
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="hover:text-white flex items-center transition-colors">
                     <FaArrowRight className="mr-2 text-blue-400 text-xs" />
-                    Contact
+                    <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'> Contact</span>
                   </Link>
                 </li>
               </ul>
@@ -109,11 +109,11 @@ import {
                 </li>
                 <li className="flex items-center">
                   <FaPhone className="mr-3 text-blue-400" />
-                  <span>+234 (0)913-117-0904</span>
+                  <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'><Link href={'tel:+234 (0)913-117-0904'}> +234 (0)913-117-0904</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaEnvelope className="mr-3 text-blue-400" />
-                  <span>info@gracefamilyoutreach.com</span>
+                  <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'><Link href={'mailto:info@gracefamilyoutreach.com'}>info@gracefamilyoutreach.com</Link></span>
                 </li>
               </ul>
             </div>

@@ -1,15 +1,28 @@
 @import "tailwindcss";
 
+@theme {
+  /* custom colours */
+  --color-gfcc-Gold: #C19300;
+  --color-gfcc-Blue: #033097;
+  --color-gfcc-SkyBlue:	#0148e8;
+  --color-gfcc-White:	#FFFFFF;
+  /* custom fonts */
+  --font-inter: var(--font-inter), sans-serif;
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-lato: var(--font-lato), sans-serif;
+  --font-display: var(--font-nunito), sans-serif;
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+  --font-playfair-display: var(--font-playfair-display), serif;
+  --font-lora: var(--font-lora);
+  --font-merriweather: var(--font-merriweather);
+  --font-cormorant-garamond: var(--font-cormorant-garamond);
+  --font-source-serif-4: var(--font-source-serif-4);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +35,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  var(--font-nunito), var(--font-inter), sans-serif;
 }

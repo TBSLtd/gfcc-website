@@ -9,43 +9,45 @@ const WorshipTimes = () => {
         {
             name: 'Morning Worship',
             time: '5:30 AM - 6:00 AM',
-            icon: <FaClock className="text-[#033097]" />
+            icon: <FaClock className="text-gfcc-Blue" />
         },
         {
             name: 'Afternoon Worship',
             time: '1:30 PM - 2:00 PM',
-            icon: <FaClock className="text-[#033097]" />
+            icon: <FaClock className="text-gfcc-Blue" />
         },
         {
             name: 'Evening Worship',
             time: '7:30 PM - 8:00 PM',
-            icon: <FaClock className="text-[#033097]" />
+            icon: <FaClock className="text-gfcc-Blue" />
         }
     ];
 
     return (
-        <div className="w-full mx-auto bg-white shadow-md overflow-hidden">
+        <div className="w-full mx-auto px--4 bg-white shadow-md">
             {/* Header */}
-            <div className="flex">
-                <div className="w-1/2 mx-10">
-                    <div className=" px-6 pt-6 flex items-center">
-                        <FaChurch className="text-[#033097] text-2xl mr-3" />
-                        <h2 className="text-xl font-bold text-[#033097]">Worship Times</h2>
+            <div className="sm:flex w-full">
+                <div className="w-full px-4 sm:w-full">
+                    <div className="pt-6 px-2 w-full flex items-center">
+                        <FaChurch className="text-gfcc-Blue text-2xl mr-3" />
+                        <h2 className="text-xl font-bold text-gfcc-Blue">Worship Times</h2>
                     </div>
 
                     {/* Schedule */}
-                    <div className="p-6">
-                        <ul className="divide-y divide-gray-200">
+                    <div className="p-3">
+                        <ul className="divide-y divide-gfcc-Gold/50">
                             {worshipSchedule.map((service, index) => (
-                                <li key={index} className="py-3">
-                                    <div className="flex items-center justify-between">
+                                <li key={index} className="py-3 w-full">
+                                    <div className="w-full gap-2 flex flex-wrap items-center justify-between">
                                         <div className="flex items-center">
                                             {service.icon}
                                             <span className="ml-3 font-medium text-gray-900">{service.name}</span>
                                         </div>
-                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                                            {service.time}
-                                        </span>
+                                        <div>
+                                            <span className="flex items-center w-fit px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-gfcc-Blue">
+                                                {service.time}
+                                            </span> 
+                                        </div>
                                     </div>
                                 </li>
                             ))}
@@ -57,7 +59,7 @@ const WorshipTimes = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative w-1/2 h-96">
+                <div className="relative w-full h-96">
                     <Image
                         src={lift}
                         alt="lifted"

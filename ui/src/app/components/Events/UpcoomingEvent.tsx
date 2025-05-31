@@ -67,14 +67,14 @@ const UpcomingEvents = () => {
   if (!currentEvent) return <div>Loading events...</div>;
 
   return (
-    <section className="py-12 bg-gray-50 w-full">
+    <section className="py-12 h-full bg-gray-50 w-full">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4 text-[#033097]">UPCOMING EVENTS</h2>
+        <h2 className="text-3xl font-bold text-center mb-4 text-gfcc-Blue">UPCOMING EVENTS</h2>
         
-        <div className="w-full mx-auto shadow-md overflow-hidden">
+        <div className="w-full mx-auto shadow-md">
           {/* Event Image (optional) */}
           {currentEvent.image && (
-            <div className="h-48 bg-blue-800 overflow-hidden">
+            <div className="h-48 bg-blue-800">
               <img 
                 src={currentEvent.image} 
                 alt={currentEvent.title}
@@ -83,9 +83,9 @@ const UpcomingEvents = () => {
             </div>
           )}
 
-          <div className="pt-6 flex justify-evenly">
+          <div className="py-6 px-6 md:px-10  md:flex justify-evenly">
             <div>
-                <h3 className="text-2xl font-bold mb-2 text-gray-800">{currentEvent.title}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-gfcc-Blue">{currentEvent.title}</h3>
                 <p className="text-gray-600 mb-4 italic">"{currentEvent.description}"</p>
                 
                 <div className="flex flex-wrap gap-4 mb-6">
@@ -103,7 +103,7 @@ const UpcomingEvents = () => {
             {/* Countdown Timer */}
             <div>
                 <div className="bg-blue-50 p-4 rounded-lg mb-6">
-                <h4 className="text-center font-medium mb-3 text-blue-800">Time Until Event</h4>
+                <h4 className="text-center font-medium mb-3 border-y border-gfcc-Gold text-blue-800">Time Until Event</h4>
                 <div className="flex justify-center gap-4">
                     <div className="text-center">
                     <div className="text-2xl font-bold text-[#033097]">{timeLeft.days}</div>

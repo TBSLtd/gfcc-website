@@ -63,14 +63,14 @@ const RecentSermons = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sermons.map((sermon) => (
-            <div key={sermon.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={sermon.id} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
               {/* Sermon Thumbnail Placeholder */}
               {/* <div className="h-48 bg-blue-800 flex items-center justify-center">
                 <span className="text-white text-xl font-bold">{sermon.title}</span>
               </div> */}
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-800">{sermon.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-gfcc-Gold">{sermon.title}</h3>
                 
                 <div className="flex items-center text-gray-600 mb-3">
                   <FaUserAlt className="mr-2 text-[#033097]" />
