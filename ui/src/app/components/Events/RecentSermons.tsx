@@ -70,15 +70,15 @@ const RecentSermons = () => {
               </div> */}
 
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gfcc-Gold">{sermon.title}</h3>
+                <h3 className="text-xl font-bold mb-2 text-gfcc-Blue">{sermon.title}</h3>
                 
                 <div className="flex items-center text-gray-600 mb-3">
-                  <FaUserAlt className="mr-2 text-[#033097]" />
+                  <FaUserAlt className="mr-2 text-gfcc-Gold" />
                   <span>By {sermon.speaker}</span>
                 </div>
                 
                 <div className="flex items-center text-gray-600 mb-4">
-                  <FaCalendarAlt className="mr-2 text-[#033097]" />
+                  <FaCalendarAlt className="mr-2 text-gfcc-Gold" />
                   <span>{sermon.date}</span>
                 </div>
 
@@ -86,7 +86,7 @@ const RecentSermons = () => {
                 <div className="flex items-center justify-between bg-gray-100 p-3 rounded-lg">
                   <button 
                     onClick={() => togglePlay(sermon.id)}
-                    className="bg-blue-600 hover:bg-[#033097] text-white p-3 rounded-full"
+                    className="bg-blue-600 hover:bg-gfcc-Blue text-white p-3 rounded-full"
                   >
                     {currentPlaying === sermon.id && isPlaying ? <FaPause /> : <FaPlay />}
                   </button>

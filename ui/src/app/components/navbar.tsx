@@ -39,15 +39,15 @@ const Navbar = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 h--16 md:h--20 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[rgba(20,20,20,0.75)] backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
-      <div className="container xl:my-2 h-full- h-16 md:h-20 mx-auto px-4 flex justify-between items-center">
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[rgba(20,20,20,0.75)] backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
+      <div className="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
         
         {/* Church Logo */}
         <Link className='cursor-pointer' href="/">
           <Image 
             src={scrolled ? logoWhite : logoBlue}
             alt="GFCC Church Logo"
-            className="z-40 -1 h-12 sm:h-16 lg:h-18 xl:h-20 h--24 w-auto transition-all duration-300 ease-in-out"
+            className="z-40 h-12 lg:h-14 2xl:h-24 h--24 w-auto transition-all duration-300 ease-in-out"
             priority
           />
         </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
                   // Dropdown menu
                   <div>
                     <button
-                      className="flex items-center text-lg md:text-base hover:text-gfcc-SkyBlue hover:font-bold transition-all duration-300"
+                      className="flex items-center text-lg md:text-base 2xl:text-2xl hover:text-gfcc-SkyBlue hover:font-bold transition-all duration-300"
                       onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     >
                       {link.name}
@@ -94,7 +94,7 @@ const Navbar = () => {
                           <Link
                             key={dropIndex}
                             href={dropItem.href}
-                            className="block px-4 py-2 text-base md:hover:bg-gfcc-Blue md:hover:text-white transition-colors"
+                            className="block px-4 py-2 text-base 2xl:text-2xl md:hover:bg-gfcc-Blue md:hover:text-white transition-colors"
                             onClick={() => {
                               setIsOpen(false);
                               setIsDropdownOpen(false);
@@ -110,7 +110,7 @@ const Navbar = () => {
                   // Regular nav link
                   <Link 
                     href={link.href}
-                    className="block text-lg md:text-base hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300"
+                    className="block text-lg md:text-base 2xl:text-2xl hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
