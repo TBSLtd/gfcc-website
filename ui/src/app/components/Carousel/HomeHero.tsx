@@ -42,13 +42,13 @@ const HomeHeroCarousel = () => {
             />
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 from-40% via-gfcc--Blue/40 to--transparent to-gfcc-Gold/30"></div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 from-40% via-gfcc--Blue/40 to--transparent to-gfcc-Gold/35"></div>
 
             {/* Content */}
             <div className="relative z-20 max-h-screen flex flex-col pt-40 pb-20 justify-center">
                 <div className="flex flex-col gap-3 xl:gap-6 pb-4 items-center justify-end lg:justify-center px-4 text-center text-white">
                     {/* Optional... text can be changed or taken out completly */}
-                    <div className="flex gap-0.5 rounded-full px-2 py-0.5 items-center justify-center bg-gfcc-SkyBlue/40 ">
+                    <div className="flex gap-1 rounded-full px-2 py-0.5 items-center justify-center bg-gfcc-Gold/35 text-gfcc--Blue font-nunito font-medium">
                         <GiChainLightning className="text-amber-200 text-sm lg:text-2xl" />
                         <span className="text-[8px]  lg:text-[10px] xl:text-xs 2xl:text-lg rounded-full  max-w-fit">
                             Commonwealth of Champions
@@ -57,7 +57,7 @@ const HomeHeroCarousel = () => {
                     <div className="font-cormorant-garamond font-bold text-2xl md:text-3xl lg:text-3xl 2xl:text-5xl">
                         In Grace Family
                     </div>
-                    <div className="font-playfair-display flex flex-wrap justify-center mt-4 md:mt-2 pb-3 sm:mb-1 lg:mb-6 bg-linear-to-t from-gfcc-Gold from-15% to-gfcc-White to-75% bg-clip-text text-transparent max-w-7/12 px--8 @min-xs:max-w-6/12 md:max-w-/12 lg:max-w-2xl font-black text-3xl @max-3xl:text-3xl sm:text-4xl md:text-5xl lg:text-6xl- 2xl:text-7xl">
+                    <div className="font-playfair-display flex flex-wrap justify-center mt-4 md:mt-2 pb-3 sm:mb-1 lg:mb-6 bg-linear-to-t from-gfcc-Gold from-15% to-gfcc-White to-75% bg-clip-text text-transparent max-w-7/12 px--8 @min-xs:max-w-6/12 md:max-w-/12 lg:max-w-2xl font-black text-3xl @max-3xl:text-3xl sm:text-4xl md:text-5xl lg:text--6xl 2xl:text-7xl">
                         God is raising an <span className="w-fit flex gap-0.5 lg:gap-x-2 items-center"><GiChainLightning className="text-amber-200 text-4xl md:text-6xl lg:text-5xl 2xl:text-7xl" /> Army of Champions <GiSparkles className="text-amber-200 text-4xl md:text-6xl lg:text-5xl 2xl:text-7xl" /></span>
                     </div>
                     {/* CTA Button */}

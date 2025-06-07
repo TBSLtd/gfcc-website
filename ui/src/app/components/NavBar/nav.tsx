@@ -68,7 +68,7 @@ const Navbar = () => {
           isOpen
             ? "text-gfcc-Blue/70 fixed w-full h-fit inset-y-0 right-0 -z-10 flex flex-col pt-20 px-6 pb-6 backdrop-blur-sm bg-white/85"
             : "hidden"
-        } md:static md:flex h-fit md:flex-row md:items-center md:z-auto md:p-3 rounded-lg ${scrolled ? 'text-gfcc-Blue/75 md:bg-gfcc-SkyBlue/20 md:backdrop-blur-sm' : ''} `}>
+        } md:static md:flex h-fit md:flex-row md:items-center md:z-auto md:p-3 rounded-lg md:backdrop-blur-xs ${scrolled ? 'text-gfcc-Blue/75 md:bg-gfcc-SkyBlue/20 md:backdrop-blur-sm' : ''} `}>
 
           {/* Blur overlay for mobile */}
           {isOpen && (
@@ -121,7 +121,7 @@ const Navbar = () => {
                     // Regular nav link
                     <Link
                       href={link.href}
-                      className={`block w-fit text-lg md:text-base 2xl:text-2xl relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:bottom-0 after:left-0 after:transition-all after:duration-500 transition-all duration-500 ${
+                      className={`block w-fit text-lg md:text-base 2xl:text-2xl relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:bottom-0 after:left-0 after:transition-all after:duration-300 transition-all duration-300 ${
                         isActive ? 'text-gfcc-SkyBlue font-bold after:w-full' : 'hover:text-gfcc-SkyBlue hover:font-bold after:w-0 hover:after:w-full'
                       }`}
                       onClick={() => setIsOpen(false)}
