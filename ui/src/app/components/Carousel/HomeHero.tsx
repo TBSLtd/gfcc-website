@@ -42,7 +42,7 @@ const HomeHeroCarousel = () => {
             />
 
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 from-40% via-gfcc--Blue/40 to-transparent- to-gfcc-Gold/45"></div>
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 from-40% via-gfcc--Blue/40 to--transparent to-gfcc-Gold/30"></div>
 
             {/* Content */}
             <div className="relative z-20 max-h-screen flex flex-col pt-40 pb-20 justify-center">
@@ -61,8 +61,8 @@ const HomeHeroCarousel = () => {
                         God is raising an <span className="w-fit flex gap-0.5 lg:gap-x-2 items-center"><GiChainLightning className="text-amber-200 text-4xl md:text-6xl lg:text-5xl 2xl:text-7xl" /> Army of Champions <GiSparkles className="text-amber-200 text-4xl md:text-6xl lg:text-5xl 2xl:text-7xl" /></span>
                     </div>
                     {/* CTA Button */}
-                    <Link className="flex mb-10 lg:mb-5 sm:mt-8 z-10 justify-center" href="https://www.youtube.com/@GraceFamilyOutreach" >
-                        <button className="inline-flex justify-center items-center sm:text-xs md:text-sm 2xl:text-lg font-medium hover:font-semibold text-gfcc-White hover:text-gfcc-Gold bg-gfcc-Blue/60 hover:bg-gfcc-SkyBlue/80 transition-colors duration-300 ease-in-out text-[10px]  px-3 py-2 sm:px-4 sm:py-2 rounded-lg">
+                    <Link className="flex mb-10 lg:mb-5 sm:mt-8 2xl:mt-12 z-10 justify-center" href="https://www.youtube.com/@GraceFamilyOutreach" >
+                        <button className="inline-flex cursor-pointer justify-center items-center sm:text-xs md:text-sm 2xl:text-lg font-medium hover:font-semibold text-gfcc-White hover:text-gfcc-Gold bg-gfcc-SkyBlue/60 hover:bg-gfcc-Blue/80 transition-colors duration-300 ease-in-out text-[10px]  px-3 py-2 sm:px-4 sm:py-2 rounded-lg  hover:scale-105 hover:shadow-xl hover:shadow-gfcc-Gold/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gfcc-SkyBlue focus-visible:ring-offset-2">
                             Live Stream
                             <FaYoutube className=" ml-2 text-sm" />
                         </button>

@@ -113,7 +113,7 @@ import {
                 </li>
                 <li className="flex items-center">
                   <FaEnvelope className="mr-3 text-blue-400" />
-                  <span className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'><Link href={'mailto:info@gracefamilyoutreach.com'}>info@gracefamilyoutreach.com</Link></span>
+                  <span   className='hover:text-gfcc-SkyBlue hover:font-bold relative after:bg-gfcc-Gold after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 transition-all duration-300'><Link href={'mailto:info@gracefamilyoutreach.com'}>info@gracefamilyoutreach.com</Link></span>
                 </li>
               </ul>
             </div>

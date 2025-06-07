@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Nunito, Lato, Playfair_Display, Lora, Merriweather, Cormorant_Garamond, Source_Serif_4  } from "next/font/google";
+import { Open_Sans , Great_Vibes, Geist, Geist_Mono, Inter, Nunito, Lato, Playfair_Display, Lora, Merriweather, Cormorant_Garamond, Source_Serif_4  } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer/footer";
 
@@ -21,6 +21,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+  weight: ['400', '600', '700'], // Common weights
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  variable: '--font-great-vibes',
+  weight: ['400'], // Common weight
+});
+
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair-display',
@@ -30,7 +42,7 @@ const playfairDisplay = Playfair_Display({
 const lora = Lora({
   subsets: ['latin'],
   variable: '--font-lora',
-  weight: ['400', '700'], // Common weights for body or sub-headlines
+  weight: ['400','500', '600', '700'], // Common weights for body or sub-headlines
 });
 
 const merriweather = Merriweather({
@@ -63,7 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${nunito.variable} ${lato.variable} ${playfairDisplay.variable} ${lora.variable} ${merriweather.variable} ${cormorantGaramond.variable} ${sourceSerif4.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${nunito.variable} ${lato.variable} ${playfairDisplay.variable} ${lora.variable} ${openSans.variable} ${greatVibes.variable} ${merriweather.variable} ${cormorantGaramond.variable} ${sourceSerif4.variable} antialiased`}
       >
         {children}
         <Footer />
