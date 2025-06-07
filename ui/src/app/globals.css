@@ -6,15 +6,18 @@
   --color-gfcc-Blue: #033097;
   --color-gfcc-SkyBlue:	#0148e8;
   --color-gfcc-White:	#FFFFFF;
+  --color-gfcc-DarkBlue: #02267D;
   /* custom fonts */
   --font-inter: var(--font-inter), sans-serif;
   --font-nunito: var(--font-nunito), sans-serif;
   --font-lato: var(--font-lato), sans-serif;
   --font-display: var(--font-nunito), sans-serif;
+  --font-open-sans: var(--font-open-sans), Arial, sans-serif ;
+  --font-great-vibes: var(--font-great-vibes), cursive; 
   --font-geist-sans: var(--font-geist-sans);
   --font-geist-mono: var(--font-geist-mono);
-  --font-playfair-display: var(--font-playfair-display), serif;
-  --font-lora: var(--font-lora);
+  --font-playfair-display: var(--font-playfair-display), Times, serif;
+  --font-lora: var(--font-lora),Georgia, serif;
   --font-merriweather: var(--font-merriweather);
   --font-cormorant-garamond: var(--font-cormorant-garamond);
   --font-source-serif-4: var(--font-source-serif-4);
@@ -35,5 +38,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family:  var(--font-nunito), var(--font-inter), sans-serif;
+  font-family:  var(--font-open-sans), var(--font-inter), sans-serif;
+}
+h1,h2{
+  font-family: var(--font-playfair-display);
+}
+h3{
+  font-family: var(--font-lora), Georgia, 'Times New Roman', Times, serif
 }
